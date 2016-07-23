@@ -1,0 +1,34 @@
+.variableHola{
+    content: @hola;
+}
+
+.variableSuma{
+    content: @suma;
+}
+
+.variableResta{
+    content: @resta;
+}
+
+.variableDivision{
+    content: @division;
+}
+
+.variableMultiplicacion{
+    content: @mult;
+}
+
+.variableTotal{
+    content: @total;
+}
+
+.elemento{
+    border-top: 1px solid @bordercolor;
+    border-bottom: 1px solid @gris02;
+}
+
+h1{font-size: @baseheadersize; color: @baseheadercolor;}
+h2{font-size: @baseheadersize * .8; color: lighten(@baseheadercolor,10%);}
+h3{font-size: @baseheadersize * .6; color: lighten(@baseheadercolor,20%);}
+h4{font-size: @baseheadersize * .4; color: lighten(@baseheadercolor,30%);}
+h5{font-size: @baseheadersize * .2; color: lighten(@baseheadercolor,40%);}

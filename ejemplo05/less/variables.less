@@ -1,0 +1,42 @@
+//operaciones con variables
+@hola: "Hola";
+
+@ciao: "ciao";
+
+@saludo: "@{hola} y @{ciao}";
+
+@variable1: 10;
+@variable2: 20;
+
+@suma: @variable1 + @variable2;
+@resta: @variable1 - @variable2;
+@division: @variable1 / @variable2;
+@mult: @variable1 * @variable2;
+
+@total: (@mult + @resta) - @variable1;
+
+@funcion: cos(1);
+
+//funciones de colores
+@negro: #000;
+@blanco: #fff;
+@verde: #0f0;
+
+@bordercolor: darken(@verde,20%);
+
+//escala de grises
+@gris01: darken(@blanco,80%);
+@gris02: darken(@blanco,60%);
+@gris03: darken(@blanco,40%);
+@gris04: darken(@blanco,20%);
+
+//sacamos el complementario
+@complementario: spin(@verde,180);
+
+//Anidamos funciones
+
+@crazycolor: fade(darken(@verde,20%),20%);
+
+//Ejemplo de uso
+@baseheadersize:2.5em;
+@baseheadercolor:#280501;
