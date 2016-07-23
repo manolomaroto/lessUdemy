@@ -1,0 +1,59 @@
+h1{
+    color:blue;
+}
+article{
+    background-color:olive;
+    header{
+        font-size: 1.5em;
+    }
+}
+
+/* Malas prácticas */
+
+body{
+    nav{
+        ul{
+            li{
+                a{
+                    color:orange;
+                }
+            }
+        }
+    }
+}
+
+/* Mejor manera para el caso de un solo ul*/
+nav{
+    li{
+        a{
+            color:orange;
+        }
+    }
+}
+
+/* Con un id */
+#idDelUl{
+    a{
+        color: orange;
+    }
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #222;
+    .highlight{
+        color: orange;
+    }
+    //con & quitamos el espacio en blanco que genera y apuntamos a los p con clase small
+    &.small{
+        font-size: .8em;
+        &::after{
+            content: " leer mas";
+            color: seagreen;
+        }
+    }
+}
+
+
+
