@@ -1,0 +1,26 @@
+
+//para los estilso de los cuadrados
+.square{
+    background-color: @basecolor;
+    border: 2px solid @bordercolor;
+}
+
+//elimina los float...
+.clearfix{
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+//Creamos otro para el ancho maximp
+.anchomaximo{
+    max-width: @anchomaximo;
+    margin-left: auto;
+    margin-right: auto;
+}
